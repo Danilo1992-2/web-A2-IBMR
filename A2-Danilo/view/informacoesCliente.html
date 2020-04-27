@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url(/imagens/imgclientecad.jpg);
+        }
+        
+        #tudo {
+            float: left;
+            margin-top: 10%;
+            margin-left: 20%;
+            color: white;
+            font-size: 30px;
+        }
+        
+        .estilo1 {
+            margin-top: 30px;
+            float: left;
+            margin-right: 20px;
+            text-align: right;
+        }
+        
+        button {
+            margin-top: 150%;
+            width: 100px;
+            height: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: yellowgreen;
+            border: none;
+            font-size: 20px;
+        }
+        
+        .estilo2 {
+            margin-top: 20px;
+            width: 30px;
+            float: left;
+            text-align: left;
+        }
+    </style>
+    <script>
+        function voltar() {
+            window.location.replace("paginadoCliente.html")
+        }
+    </script>
+</head>
+
+<body>
+    <div id="tudo">
+        <div class="estilo1">
+            <p>Nome</p>
+            <p>CPF</p>
+            <p>Data nascimento</p>
+            <p>Orientação sexual</p>
+            <p>Usuário</p>
+            <p>Senha</p>
+            <p>E-mail</p>
+            <p>Telefone</p>
+            <p>Endereço</p>
+        </div>
+        <div style="text-align: left;" class="estilo1">
+            <p>Danilo Oliveira Silva</p>
+            <p>157.851.367-97</p>
+            <p>04/09/1992</p>
+            <p>Masculino</p>
+            <p>danio2020</p>
+            <p>*******</p>
+            <p>danilo.silva@gmail.com</p>
+            <p>(21)99585-4585</p>
+            <p>Rua amazon,754- Carovos, Rio de Janeiro RJ</p>
+        </div>
+        <div class="estilo2">
+            <button> <strong>excluir cadastro</strong> </button>
+            <button> <strong>ajustar cadastro</strong> </button>
+            <button onclick="voltar()"> <strong>Voltar</strong></button>
+        </div>
+    </div>
+</body>
+
+</html>

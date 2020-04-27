@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(/imagens/imgfundo.jpg);
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    div {
+        margin-top: 100px;
+        float: left;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    button {
+        width: 150px;
+        height: 70px;
+        background-color: yellowgreen;
+        border: none;
+    }
+</style>
+<script>
+    function voltar() {
+        window.location.replace("paginadoCliente.html")
+    }
+
+    function finalizado() {
+        alert("A compra não foi finalizada =), a página de finalização não foi criada.")
+    }
+</script>
+
+<body>
+
+    <div>
+        <div>
+            <img src="/produtos/1632427168_1GG.jpg">
+        </div>
+        <div>
+            <h2>Mascara</h2>
+        </div>
+        <div>
+            <h1>R$ 25,00</h1>
+        </div>
+        <div>
+            <h3 style=" margin-top: 15px; font-size: 20px;">Material de tecido leve e resistente,<br> se adapta em qualquer formato de rosto, ideal <br> para proteção da boca e do nariz.<br> Produto lavável! Recomendamos<br> comprar entre 2 a 3 máscaras por pessoa.</h3>
+        </div>
+        <div>
+            <button onclick="finalizado()">
+                Finalizar<br>
+                compra
+            </button>
+            <p><button onclick="voltar()">
+                Cancelar
+            </button></p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

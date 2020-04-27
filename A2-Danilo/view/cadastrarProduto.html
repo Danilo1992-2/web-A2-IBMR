@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>tec objects Cadastro de Produto</title>
+    <style>
+        body {
+            background-image: url(/imagens/poderoso.jpg);
+        }
+        
+        .corp {
+            margin-top: 10%;
+            margin-left: -20%;
+        }
+        
+        .text {
+            font-size: 30px;
+            color: yellowgreen;
+            float: left;
+            width: 20%;
+            text-align: right;
+            margin-left: 29%;
+        }
+        
+        .form {
+            font-size: 30px;
+            float: right;
+            width: 50%;
+            text-align: left;
+        }
+        
+        input {
+            text-align: left;
+        }
+        
+        button {
+            font-size: 20px;
+            margin-top: 0%;
+            margin-left: 46%;
+            background-color: yellowgreen;
+            border: none;
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function voltar() {
+            window.location.replace("/paginaDoAdm.html")
+        }
+
+        function cadastrar() {
+            if (document.getElementById("arquivo").value == "" ||
+                document.getElementById("nomeProd").value == "" ||
+                document.getElementById("valorprod").value == "" ||
+                document.getElementById("seg").value == "" ||
+                document.getElementById("textao").value == "") {
+                alert("Por favor, revise os dados!");
+
+            } else {
+                alert("Produto cadastrado!")
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="corp">
+        <form>
+
+            <div class="text">
+                <p>imgProduto</p>
+                <p>Nome:</p>
+                <p>Valor:</p>
+                <p>Segmento:</p>
+                <p>Descrição:</p>
+            </div>
+            <div class="form">
+                <p><input type="file" id="arquivo"></p>
+                <p><input type="text" name="NomeProduto" id="nomeProd"></p>
+                <p><input type="text" name="valorDoProduto" id="valorprod"></p>
+                <p><select name="Segmento" id="seg">
+                    <option> Computador </option>
+                    <option> Notebook </option>
+                    <option> Smartfone </option>
+                    <option> Tablet </option>
+                    <option> Servidores </option>
+                    <option> Outros </option>
+                </select></p>
+                <textarea name="segmento" id="textao" cols="50" rows="10"></textarea>
+            </div>
+        </form>
+    </div>
+    <button onclick="cadastrar()"><STRong> CADASTRAR </STRong> </button>
+    <div style="margin-top: 12.5%;">
+        <a style="font-size: 30px; color:yellowgreen;text-decoration: none;" href="paginaDoAdm.html">Voltar</a>
+    </div>
+</body>
+
+</html>

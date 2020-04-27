@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>tec Objects Find</title>
+</head>
+<style>
+    body {
+        background-image: url(/imagens/poderoso.jpg);
+    }
+    
+    .procurar {
+        margin-left: 35%;
+        width: 50%;
+        height: 30%;
+    }
+    
+    input {
+        width: 52%;
+        height: 30px;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .Nome {
+        background-color: yellowgreen;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        color: whitesmoke;
+        float: left;
+        text-align: center;
+        width: 200px;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .alterar {
+        float: left;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+    }
+</style>
+<script>
+    function validar() {
+        if (document.getElementById("find")) {
+            alert("Você não digitou nada!")
+        }
+    }
+</script>
+
+<body style="margin-top: 110px;">
+    <div class="procurar" name="find">
+        <input style="height: 30px ; height: 40px; " type="number" placeholder="Informe o ID do produto" id="find">
+        <button style="margin-top: 10px; width: 80px;height: 40px;" onclick="validar()">Procurar</button>
+    </div>
+    <div style="margin-top: 30px;margin-left: 300px;">
+        <div class="Nome" name="img">
+            <img style="width: 150px; height: 120px;" src="/imagens/xiaomi-mi-cc9-pro-fotografia-smartphone-990x743.png">
+        </div>
+    </div>
+    <div class="Nome" name="Produtctname">
+        <p>Xiaomi Mi CC9</p>
+    </div>
+    <div class="Nome" name="segment">
+        <p>Smartfone</p>
+    </div>
+    <div class="Nome" name="valor">
+        <p>R$ 2.799,90</p>
+    </div>
+    <div class="Nome">
+        <p>
+            Processador 8 core <br> Tela de 6.47<br> Memória de 128 Gb <br> Camêra de 108Mpx<br>
+        </p>
+    </div>
+    <div class="Nome">
+        <p>ID15908</p>
+    </div>
+    </div>
+
+</body>
+
+</html>

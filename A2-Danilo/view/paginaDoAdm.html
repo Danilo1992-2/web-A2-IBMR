@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>tec objects Administrador</title>
+
+</head>
+<style>
+    body {
+        background-image: url(/imagens/poderoso.jpg);
+    }
+    
+    button {
+        background-color: #088A85;
+        color: black;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+        width: 30%;
+        height: 120px;
+        margin-top: 30px;
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: static;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .div1 {
+        margin-right: 20%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .div2 {
+        color: whitesmoke;
+        float: right;
+        margin-top: -30.8%;
+        margin-right: 0%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .procurar {
+        height: 80px;
+        text-align: center;
+        width: 100%;
+        font-size: 60%;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .sair {
+        margin-top: 14.5%;
+        margin-left: 50%;
+        margin-right: 50%;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+</style>
+
+<script>
+    function cadastroo() {
+        window.location.replace("/cadastro.html")
+    }
+
+    function cadastrouser() {
+        window.location.replace("/novoUsuario.html")
+    }
+
+    function cadastrarProduto() {
+        window.location.replace("/cadastrarProduto.html")
+    }
+
+    function pesquisarProduto() {
+        window.location.replace("/ProcurarProduto.html")
+    }
+
+    function pesquisaprod() {
+        if (document.getElementById("pesquisaProd").value == "") {
+            alert("Você precisa informar algum item pra buscar.")
+        }
+    }
+</script>
+
+<body>
+    <div class="div1">
+
+        <p><button onclick="cadastrarProduto()">Cadastrar Produto</button></p>
+        <p><button onclick="cadastroo()">Cadastrar Cliente</button></p>
+        <p><button onclick="cadastrouser()">Cadastrar usuário</button></p>
+
+        <p><button onclick="pesquisarProduto()">alterar | Deletar<br>Produto </button></p>
+
+    </div>
+    <div class="div2">
+        <h1>Pesquisar Produto<input class="procurar" type="search" placeholder="Digite o produto" id="pesquisaProd"></h1>
+        <button style="width:20%;height: 20%;margin-left: 40%;margin-top: 1%;" onclick="pesquisaprod()">Procurar</button>
+    </div>
+    <img style="float: right; margin-top: 10.5%;" src="/imagens/Captura de tela de 2020-04-26 13-18-14.png" alt="">
+    <div class="sair">
+        <p><a style="text-decoration: none; color: whitesmoke;" href="/index.html"><strong >SAIR</strong> </a></p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>tec objects Cadastro</title>
+    <style>
+        body {
+            background-image: url(/imagens/img3.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        
+        .h1 {
+            color: yellowgreen;
+            margin: 0, 7%;
+            width: 600px;
+            position: absolute;
+            top: 0.1%;
+            left: 47%;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .textFormulario {
+            color: whitesmoke;
+            margin-top: 5%;
+            margin-left: 10%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .inputForm {
+            width: 40%;
+            height: 60%;
+            float: left;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .caixadeinput {
+            font-size: 15px;
+            width: 300px;
+            height: 15px;
+            margin-top: auto;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        p {
+            font-size: 20px;
+            color: yellowgreen;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        .button {
+            color: black;
+            background-color: yellowgreen;
+            border: none;
+            width: 245px;
+            height: 40px;
+            left: 49%;
+            top: 79.8%;
+            position: absolute;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+    <script>
+        function enviado() {
+            alert("Dados cadastrados!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>Cadastro</h1>
+
+    </div>
+    <div>
+        <form class="textFormulario">
+
+            <div align="right" class="inputForm">
+                <p>Nome:</p>
+                <p>Sobrenome:</p>
+                <p>CPF:</p>
+                <p>Data de Nascimentos:</p>
+                <p>Orientação sexual: </p>
+                <p>Usuário:</p>
+                <p>Senha:</p>
+                <p>Confirmar senha:</p>
+                <p>E-mail:</p>
+                <p>Telefone:</p>
+                <p>Cidade:</p>
+                <p>Bairro:</p>
+                <p>Tipo Logradouro:</p>
+                <p>Logradouro:</p>
+                <p>CEP:</p>
+                <p style="width: 250px;">Deseja receber promoções por e-mail?</p>
+
+            </div>
+            <div class="inputForm ">
+
+                <p><input class="caixadeinput" type="text" name="nome" id="nome"> </p>
+                <p><input class="caixadeinput" type="text" name="sobrenome" id="sobrenome"></p>
+                <p><input class="caixadeinput" type="number" name="cpf" id="cpf"></p>
+                <p><input class="caixadeinput" type="date" name="dataNascimento" id="dataNascimento"></p>
+                <p><input type="radio">Feminino <input type="radio" name="Osexo" id="osexo"> Masculino</p>
+                <p><input class="caixadeinput" type="text" name="usu" id="usu"></p>
+                <p><input class="caixadeinput" type="password" name="pass" id="pass"></p>
+                <p><input class="caixadeinput" type="password" name="confPass" id="confpass"></p>
+                <p><input class="caixadeinput" type="text" name="email" id="email"></p>
+                <p><input class="caixadeinput" type="number" name="telefone" id="telefone"></p>
+                <p><select style="height: 20px;" class="caixadeinput" name="estado" id="estado">
+                    <option></option>
+                    <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito<option>Federal</option></option>
+                    <option>Espírito<option>Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato<option>Grosso</option>
+                    <option>Mato<option>Grosso<option>do<option>Sul</option>
+                    <option>Minas<option>Gerais</option>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio<option>de<option>Janeiro</option>
+                    <option>Rio<option>Grande<option>do<option>Norte</option>
+                    <option>Rio<option>Grande<option>do<option>Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa<option>Catarina</option>
+                    <option>São<option>Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
+                </select></p>
+                <p><input class="caixadeinput" type="text" name="bairro"></p>
+                <p><select style="height: 20px;" class="caixadeinput" name="TipoLagr" id="tipolarg">
+                    <option> </option>
+                    <option>Aeroporto</option>
+                    <option>Alameda</option>
+                    <option>Área</option>
+                    <option>Avenida</option>
+                    <option>Campo</option>
+                    <option>Chácara</option>
+                    <option>Colônia</option>
+                    <option>Condomínio</option>
+                    <option>Conjunto</option>
+                    <option>Distrito</option>
+                    <option>Esplanada</option>
+                    <option>Estação</option>
+                    <option>Estrada</option>
+                    <option>Favela</option>
+                    <option>Fazenda</option>
+                    <option>Feira</option>
+                    <option>Jardim</option>
+                    <option>Ladeira</option>
+                    <option>Lago</option>
+                    <option>Lagoa</option>
+                    <option>Largo</option>
+                    <option>Loteamento</option>
+                    <option>Morro</option>
+                    <option>Núcleo</option>
+                    <option>Parque</option>
+                    <option>Passarela</option>
+                    <option>Pátio</option>
+                    <option>Praça</option>
+                    <option>Quadra</option>
+                    <option>Recanto</option>
+                    <option>Residencial</option>
+                    <option>Rodovia</option>
+                    <option>Rua</option>
+                    <option>Setor</option>
+                    <option>Sítio</option>
+                    <option>Travessa</option>
+                    <option>Trecho</option>
+                    <option>Trevo</option>
+                    <option>Vale</option>
+                    <option>Vereda</option>
+                    <option>Via</option>
+                    <option>Viaduto</option>
+                    <option>Viela</option>
+                    <option>Vila</option>
+                </select></p>
+                <p><input class="caixadeinput" type="text" name="lagr" placeholder="Endereço"> <input style="width: 45px;height: 15px;" type="number" placeholder="Nº"> <input type="text" placeholder="Complemento"> </p>
+                <p><input class="caixadeinput" type="number" name="cep"> </p>
+
+                <p><input style="min-width: 40px;min-height: 40px;" type="checkbox"></p>
+            </div>
+            <div>
+                <button class="button" onclick="enviado()" name="enviarInformações"> <strong>SALVAR</strong></button>
+            </div>
+
+
+        </form>
+
+    </div>
+    <img style="margin-left: -27%;margin-top: -15%;" src="/imagens/Captura de tela de 2020-04-26 13-18-14.png" alt="">
+</body>
+
+</html>
